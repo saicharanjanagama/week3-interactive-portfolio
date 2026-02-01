@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Charan • Portfolio</title>
+
+  <!-- Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER + HERO ================= -->
+  <header class="header">
+    <img src="images/photo.jpeg" alt="Sai Charan" class="profile-img" />
+
+    <h1>👋 Hi, I'm <span class="highlight">Sai Charan</span></h1>
+
+    <p class="subtitle">
+      Aspiring Full Stack Developer | Passionate about building creative, dynamic,  
+      responsive, and scalable web applications.
+    </p>
+
+    <!-- SOCIAL ICONS -->
+    <div class="social-links">
+      <a href="https://github.com/saicharanjanagama" target="_blank" class="icon github">
+        <i class="devicon-github-original colored"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/saicharanjanagama/" target="_blank" class="icon linkedin">
+        <i class="devicon-linkedin-plain colored"></i>
+      </a>
+    </div>
+
+    <button id="themeToggle" class="btn theme-btn">🌙</button>
+
+    <nav class="nav">
+      <a href="#home">Home</a> |
+      <a href="#about">About</a> |
+      <a href="#skills">Skills</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= HOME SECTION ================= -->
+  <section id="home" class="hero">
+    <h2>Hello, I'm Sai Charan</h2>
+    <p>Frontend Developer • React • JavaScript • Three.js</p>
+
+    <button class="btn" id="showMoreBtn">Show More</button>
+
+    <p id="extraText" class="hidden">
+      Passionate frontend developer specializing in building clean and interactive UI experiences.
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <h2>👨‍🎓 About Me</h2>
+    <p>
+      🎓 I'm a Computer Science Engineering graduate from Anurag University 
+      and an aspiring Full Stack Developer.<br><br>
+
+      I love building dynamic and responsive web applications using modern 
+      technologies like HTML, CSS, JavaScript, React.js, Python, Flask, 
+      Django, and Firebase.<br><br>
+
+      My goal is to work on real-world projects that make a meaningful impact.
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ================= IMAGE SLIDER ================= -->
+  <section class="slider-section">
+    <h2>Certificaton Gallery</h2>
+
+    <div class="slider">
+      <img id="slideImg" src="images/ServiceNowCSA (2)_page-0001 (1).jpg" alt="slider">
+
+      <div class="controls">
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="skills">
+    <h2>🧰 Tech Stack</h2>
+
+    <div class="badges">
+      <span><i class="devicon-html5-plain colored"></i> HTML5</span>
+      <span><i class="devicon-css3-plain colored"></i> CSS3</span>
+      <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+      <span><i class="devicon-react-original colored"></i> React</span>
+      <span><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+      <span><i class="devicon-python-plain colored"></i> Python</span>
+      <span><i class="devicon-django-plain colored"></i> Django</span>
+      <span><i class="devicon-flask-original colored"></i> Flask</span>
+      <span><i class="devicon-firebase-plain colored"></i> Firebase</span>
+      <span><i class="devicon-redux-original colored"></i> Redux</span>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="projects">
+    <h2>🧩 Projects</h2>
+
+    <!-- FILTER BUTTONS -->
+    <button class="btn filter-btn" data-filter="all">All</button>
+    <button class="btn filter-btn" data-filter="web">Web</button>
+    <button class="btn filter-btn" data-filter="react">React</button>
+
+    <div class="project-list">
+
+      <div class="project-card" data-category="threejs">
+        <h3>🌌 3D Solar System Simulation</h3>
+        <p>A fully interactive 3D Solar System built with Three.js & GSAP.</p>
+        <a href="https://3d-solar-system2905.netlify.app/" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="project-card" data-category="react">
+        <h3>💼 LinkedIn Clone</h3>
+        <p>React + Firebase + Redux based interactive social feed.</p>
+        <a href="https://linkedin-clone-accd3.web.app/" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="project-card" data-category="react">
+        <h3>🚗 Tesla Clone</h3>
+        <p>Built using React, Redux & Framer Motion animations.</p>
+        <a href="https://github.com/saicharanjanagama/TESLA-CLONE-Reactjs.git" target="_blank">GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact">
+    <h2>☎️ Contact Me</h2>
+    <p>Feel free to send a message!</p>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" placeholder="Write your message..."></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <p id="formError" class="error"></p>
+    <p id="formSuccess" class="success"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sai Charan | Built with ❤️ using HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
